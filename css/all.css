@@ -1,0 +1,531 @@
+/* =========================================================================
+   Pearl - Compare / FAQ / Privacy Policy pages
+   This stylesheet ONLY adds new, uniquely-prefixed classes.
+   It never redeclares or overrides any selector from style.css.
+   ========================================================================= */
+
+/* ---------------------------------------------------------------------
+   Shared: centered page hero title (used by Compare & FAQ)
+   --------------------------------------------------------------------- */
+.jw_page_hero_title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.jw_page_hero_title .jw_sub_title {
+  color: #153462;
+}
+.jw_page_hero_title p {
+  max-width: 665px;
+  margin: 15px auto 0 auto;
+  color: #153462;
+}
+
+/* =========================================================================
+   jw_compaire_section
+   ========================================================================= */
+.jw_compaire_section {
+  padding: 260px 0 140px;
+}
+.jw_compaire_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 45px;
+  margin-bottom: 90px;
+}
+.jw_compaire_card {
+  width: 100%;
+}
+.jw_compaire_images {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.jw_compaire_images::before {
+  display: block;
+  content: "";
+  padding-top: 78%;
+}
+.jw_compaire_images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.jw_compaire_card h3 {
+  color: #153462;
+  font-size: 46px;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+.jw_compaire_price {
+  font-size: 26px;
+  line-height: 36px;
+  color: #153462;
+  font-weight: 600;
+  font-family: "Sora";
+  margin-bottom: 22px;
+}
+.jw_compaire_card > p.p2 {
+  max-width: 490px;
+  margin-bottom: 26px;
+}
+.jw_compaire_meta {
+  margin-bottom: 8px;
+}
+.jw_compaire_meta p {
+  font-size: 18px;
+  line-height: 42px;
+  color: #153462;
+  font-family: "Sora";
+  font-weight: 400;
+}
+.jw_compaire_stars {
+  color: #153462;
+  letter-spacing: 3px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* Compare accordion (Description / Shipping & Returns) */
+.jw_compaire_accordion {
+  margin: 22px 0 34px;
+}
+.jw_compaire_accordion .accordion-item {
+  border-bottom: 1px solid #153462;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+}
+.jw_compaire_accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.jw_compaire_accordion .accordion-tabs {
+  position: relative;
+  padding-right: 34px;
+  font-family: "Sora";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #153462;
+  cursor: pointer;
+}
+.jw_compaire_accordion .accordion-tabs .accordion_icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  cursor: pointer;
+}
+.jw_compaire_accordion .accordion-content {
+  display: none;
+  padding-top: 16px;
+}
+.jw_compaire_accordion .accordion-content p {
+  color: #153462c2;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 12px;
+  max-width: 500px;
+}
+.jw_compaire_accordion .accordion-content p:last-child {
+  padding-bottom: 0;
+}
+.jw_compaire_cart_btn {
+  margin-top: 4px;
+}
+
+/* =========================================================================
+   jw_faq_section
+   ========================================================================= */
+.jw_faq_section {
+  padding: 260px 0 140px;
+}
+.jw_faq_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 90px;
+  margin-bottom: 90px;
+}
+.jw_faq_column .accordion-item {
+  border-bottom: 1px solid #153462;
+  padding-bottom: 24px;
+  margin-bottom: 34px;
+}
+.jw_faq_column .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.jw_faq_column .accordion-tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 20px;
+  font-family: "Sora";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #153462;
+  cursor: pointer;
+}
+.jw_faq_column .accordion-tabs .accordion_icon {
+  flex-shrink: 0;
+  font-size: 24px;
+  color: #153462;
+  cursor: pointer;
+}
+.jw_faq_column .accordion-content {
+  display: none;
+  padding-top: 18px;
+}
+.jw_faq_column .accordion-content p {
+  color: #153462c2;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 14px;
+}
+.jw_faq_column .accordion-content p:last-child {
+  padding-bottom: 0;
+}
+
+/* =========================================================================
+   jw_privacy_policy_section
+   ========================================================================= */
+.jw_privacy_policy_section {
+  padding: 260px 0 140px;
+}
+.jw_privacy_policy_title {
+  margin-bottom: 70px;
+}
+.jw_privacy_policy_title h2 {
+  color: #153462;
+  margin-bottom: 16px;
+}
+.jw_privacy_policy_title p {
+  max-width: 620px;
+  color: #153462;
+}
+
+.jw_privacy_policy_top_wrap {
+  display: flex;
+  align-items: center;
+  grid-gap: 100px;
+  margin-bottom: 130px;
+}
+.jw_privacy_policy_img_wrap {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.jw_privacy_policy_images {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.jw_privacy_policy_images::before {
+  display: block;
+  content: "";
+  padding-top: 78%;
+}
+.jw_privacy_policy_images img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.jw_privacy_policy_note {
+  position: absolute;
+  right: -8%;
+  bottom: -10%;
+  max-width: 300px;
+  width: 60%;
+  background-color: #153462;
+  border-radius: 16px;
+  padding: 34px 30px;
+  z-index: 2;
+}
+.jw_privacy_policy_note p {
+  font-family: "Erotique Alternate Trial";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+}
+.jw_privacy_policy_quote {
+  width: 100%;
+}
+.jw_privacy_policy_quote h4 {
+  color: #153462;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 24px;
+}
+.jw_privacy_policy_quote p.p2 {
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------------------
+   jw_cms-content
+   Dynamically inserted (CMS) content — plain tags only, no helper
+   classes. Every tag's spacing/size is defined here in isolation so
+   this scope can never leak out to, or be affected by, any other
+   part of the site.
+   ------------------------------------------------------------------- */
+.jw_cms-content {
+  color: #153462;
+  font-family: "Sora";
+}
+.jw_cms-content > *:first-child {
+  margin-top: 0 !important;
+}
+.jw_cms-content > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.jw_cms-content h2 {
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #153462;
+  margin: 56px 0 20px;
+}
+.jw_cms-content h3 {
+  position: relative;
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #153462;
+  margin: 34px 0 16px;
+  padding-left: 30px;
+}
+.jw_cms-content h3 .jw_cms_sparkle {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.jw_cms-content h4 {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #153462;
+  margin: 26px 0 12px;
+}
+.jw_cms-content p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #153462c2;
+  margin: 0 0 18px;
+}
+.jw_cms-content a {
+  color: #153462;
+  text-decoration: underline;
+}
+.jw_cms-content strong,
+.jw_cms-content b {
+  color: #153462;
+  font-weight: 700;
+}
+
+/* Indent content that belongs to a "+ subheading" (h3), up to three
+   following blocks — matches the flat, tag-by-tag CMS output. */
+.jw_cms-content h3 + p,
+.jw_cms-content h3 + p + p,
+.jw_cms-content h3 + p + p + p,
+.jw_cms-content h3 + ol,
+.jw_cms-content h3 + ul,
+.jw_cms-content h3 + p + ol,
+.jw_cms-content h3 + p + ul,
+.jw_cms-content h3 + p + p + ol {
+  margin-left: 30px;
+  max-width: calc(100% - 30px);
+}
+
+.jw_cms-content ol,
+.jw_cms-content ul {
+  margin: 0 0 18px;
+  padding-left: 20px;
+}
+.jw_cms-content ol li,
+.jw_cms-content ul li {
+  font-size: 16px;
+  line-height: 27px;
+  color: #153462c2;
+  padding-bottom: 12px;
+}
+.jw_cms-content ol li:last-child,
+.jw_cms-content ul li:last-child {
+  padding-bottom: 0;
+}
+.jw_cms-content ol {
+  list-style: decimal;
+}
+.jw_cms-content ol li::marker {
+  color: #153462;
+  font-weight: 600;
+}
+
+/* =========================================================================
+   Responsive
+   ========================================================================= */
+@media (max-width: 1441px) {
+  .jw_compaire_section,
+  .jw_faq_section,
+  .jw_privacy_policy_section {
+    padding-top: 220px;
+  }
+  .jw_page_hero_title {
+    margin-bottom: 70px;
+  }
+  .jw_compaire_wrap {
+    grid-gap: 34px;
+    margin-bottom: 70px;
+  }
+  .jw_compaire_card h3 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .jw_privacy_policy_top_wrap {
+    grid-gap: 60px;
+    margin-bottom: 100px;
+  }
+  .jw_privacy_policy_quote h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .jw_faq_wrap {
+    grid-gap: 0 50px;
+  }
+  .jw_privacy_policy_top_wrap {
+    grid-gap: 40px;
+  }
+  .jw_privacy_policy_note {
+    padding: 24px 22px;
+  }
+  .jw_privacy_policy_note p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .jw_compaire_card h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+  .jw_compaire_section,
+  .jw_faq_section,
+  .jw_privacy_policy_section {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  .jw_compaire_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .jw_faq_wrap {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .jw_faq_column:first-child {
+    margin-bottom: 10px;
+  }
+  .jw_privacy_policy_top_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
+  }
+  .jw_privacy_policy_img_wrap {
+    max-width: 100%;
+  }
+  .jw_privacy_policy_note {
+    right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .jw_compaire_section,
+  .jw_faq_section,
+  .jw_privacy_policy_section {
+    padding-top: 170px;
+  }
+  .jw_page_hero_title {
+    margin-bottom: 50px;
+  }
+  .jw_compaire_card h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .jw_compaire_price {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .jw_faq_column .accordion-tabs {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .jw_privacy_policy_title h2 {
+    font-size: 46px;
+    line-height: 54px;
+  }
+  .jw_privacy_policy_quote h4 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .jw_cms-content h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 40px;
+  }
+  .jw_cms-content h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .jw_compaire_section,
+  .jw_faq_section,
+  .jw_privacy_policy_section {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .jw_privacy_policy_note {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 16px;
+  }
+  .jw_privacy_policy_img_wrap {
+    margin-bottom: 0;
+  }
+  .jw_privacy_policy_images::before {
+    padding-top: 90%;
+  }
+  .jw_compaire_meta p {
+    font-size: 16px;
+    line-height: 34px;
+  }
+  .jw_cms-content h3 {
+    padding-left: 26px;
+  }
+  .jw_cms-content h3 + p,
+  .jw_cms-content h3 + p + p,
+  .jw_cms-content h3 + p + p + p,
+  .jw_cms-content h3 + ol,
+  .jw_cms-content h3 + ul,
+  .jw_cms-content h3 + p + ol,
+  .jw_cms-content h3 + p + ul,
+  .jw_cms-content h3 + p + p + ol {
+    margin-left: 20px;
+    max-width: calc(100% - 20px);
+  }
+}
