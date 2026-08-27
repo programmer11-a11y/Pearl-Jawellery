@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
     slidesPerView: 1,
     loop: true,
     autoplay: {
-      delay: 25000,
+      delay: 2500,
       disableOnInteraction: false,
     },
   });
@@ -283,9 +283,6 @@ jQuery(document).ready(function () {
       },
     },
   });
-  // var container_width = jQuery('.jw_blog_two_section .container').css("margin-right");
-  // jQuery('.jw_blog_two_wrap').css('width', 'calc(100% + ' + container_width + ')');
-  // jw_blog_two_section
 
   // jw_featured-Product_section
   var swiper = new Swiper(".jw_featured-Product_section .mySwiper", {
@@ -466,22 +463,23 @@ jQuery(document).ready(function () {
       const $currentTab = jQuery(this);
       const $accordion = $currentTab.closest(".accordion");
 
-    if ($currentTab.hasClass("acco-active")) {
-      $currentTab.removeClass("acco-active");
-      $currentTab.next(".accordion-content").slideUp();
+      if ($currentTab.hasClass("acco-active")) {
+        $currentTab.removeClass("acco-active");
+        $currentTab.next(".accordion-content").slideUp();
 
-      $currentTab.find(".accordion_icon").text("add");
-    } else {
-      $accordion.find(".accordion-tabs").removeClass("acco-active");
-      $accordion.find(".accordion-content").slideUp();
-      $accordion.find(".accordion-tabs .accordion_icon").text("add");
+        $currentTab.find(".accordion_icon").text("add");
+      } else {
+        $accordion.find(".accordion-tabs").removeClass("acco-active");
+        $accordion.find(".accordion-content").slideUp();
+        $accordion.find(".accordion-tabs .accordion_icon").text("add");
 
-      $currentTab.addClass("acco-active");
-      $currentTab.next(".accordion-content").slideDown();
+        $currentTab.addClass("acco-active");
+        $currentTab.next(".accordion-content").slideDown();
 
-      $currentTab.find(".accordion_icon").text("remove");
-    }
-  });
+        $currentTab.find(".accordion_icon").text("remove");
+      }
+    },
+  );
   // Open first accordion item(s) by default — responsive:
   // - Tablet/Mobile (<=991px): open ONLY the very first accordion item on the page
   // - Desktop (>991px): open the first item of EACH accordion group
@@ -565,7 +563,7 @@ jQuery(document).ready(function () {
     ".jw_account-detail .jw_input_wrap .jw_custom_col span",
     function () {
       var $this = jQuery(this);
-      var $input = $this.closest('.jw_custom_col').find('input');
+      var $input = $this.closest(".jw_custom_col").find("input");
 
       $this.toggleClass("visibility_icon");
       if ($this.hasClass("visibility_icon")) {
@@ -575,7 +573,7 @@ jQuery(document).ready(function () {
         $this.text("visibility_off");
         $input.attr("type", "text");
       }
-    }
+    },
   );
 
   jQuery("body").on("click", ".jw_order_details_view", function () {
@@ -669,12 +667,6 @@ $(document).ready(function () {
   }
 
   const cursor = new Cursor(document.querySelector(".cursor"));
-
-  // jQuery(".jw_data_title").hover( function(e){
-  //    var mX = e.pageX + 'px';
-  //    var mY = e.pageY + 'px';
-  //    document.getElementsByClassName('cursor')[0].style.transform = 'translate3d(' + mX + ',' + mY  + ',' +  '0px)';
-  //  });
 
   jQuery(".jw_data_title").hover(
     function () {
@@ -1056,7 +1048,9 @@ jQuery(function ($) {
     function (e) {
       // If clicking directly on text or links inside card content, don't trigger modal
       if (
-        jQuery(e.target).closest(".jw_shop_stores_card_box_content, .jw_shop_messonary_card_box_content").length &&
+        jQuery(e.target).closest(
+          ".jw_shop_stores_card_box_content, .jw_shop_messonary_card_box_content",
+        ).length &&
         !jQuery(e.target).is("img")
       ) {
         return;
@@ -1073,29 +1067,32 @@ jQuery(function ($) {
         jQuery(this).hasClass("jw_shop_messonary_images")
           ? jQuery(this)
           : jQuery(this).closest(
-              ".jw_shop_stores_images, .jw_shop_now_images, .jw_shop_messonary_images, .jw_shop_stores_card_box, .jw_shop_now_card_box, .jw_shop_messonary_card_box"
+              ".jw_shop_stores_images, .jw_shop_now_images, .jw_shop_messonary_images, .jw_shop_stores_card_box, .jw_shop_now_card_box, .jw_shop_messonary_card_box",
             );
 
       var $card = jQuery(this).closest(
-        ".jw_shop_stores_card_box, .jw_shop_now_card_box, .jw_shop_messonary_card_box, .jw_shop_stores_wrap, .jw_shop_now_page_wrap, .jw_shop_messonary_page_wrap"
+        ".jw_shop_stores_card_box, .jw_shop_now_card_box, .jw_shop_messonary_card_box, .jw_shop_stores_wrap, .jw_shop_now_page_wrap, .jw_shop_messonary_page_wrap",
       );
 
-      var imgSrc =
-        jQuery(this).is("img")
-          ? jQuery(this).attr("src")
-          : $imgContainer.find("img").first().attr("src");
+      var imgSrc = jQuery(this).is("img")
+        ? jQuery(this).attr("src")
+        : $imgContainer.find("img").first().attr("src");
 
       var title = "Rings";
       var price = "$ 100";
 
       if ($card.length) {
         var cardTitle = $card
-          .find(".jw_shop_stores_card_box_content h5, .jw_shop_messonary_card_box_content h5, h5")
+          .find(
+            ".jw_shop_stores_card_box_content h5, .jw_shop_messonary_card_box_content h5, h5",
+          )
           .first()
           .text()
           .trim();
         var cardPrice = $card
-          .find(".jw_shop_stores_card_box_content p, .jw_shop_messonary_card_box_content p, p:contains('$')")
+          .find(
+            ".jw_shop_stores_card_box_content p, .jw_shop_messonary_card_box_content p, p:contains('$')",
+          )
           .first()
           .text()
           .trim();
@@ -1135,7 +1132,7 @@ jQuery(function ($) {
       // Open modal
       jQuery("#jwProductModal").addClass("active");
       jQuery("body").addClass("noscroll");
-    }
+    },
   );
 
   // Close modal on close button click
@@ -1162,99 +1159,121 @@ jQuery(function ($) {
   });
 
   // Modal Quantity Plus
-  jQuery(document).on("click", "#jwProductModal .jw_quantity .plus", function (e) {
-    e.preventDefault();
-    var $input = jQuery(this).prev("input");
-    var currentVal = parseInt($input.val(), 10) || 1;
-    if (currentVal < 99) {
-      $input.val(currentVal + 1);
-    }
-  });
+  jQuery(document).on(
+    "click",
+    "#jwProductModal .jw_quantity .plus",
+    function (e) {
+      e.preventDefault();
+      var $input = jQuery(this).prev("input");
+      var currentVal = parseInt($input.val(), 10) || 1;
+      if (currentVal < 99) {
+        $input.val(currentVal + 1);
+      }
+    },
+  );
 
   // Modal Quantity Minus
-  jQuery(document).on("click", "#jwProductModal .jw_quantity .minus", function (e) {
-    e.preventDefault();
-    var $input = jQuery(this).next("input");
-    var currentVal = parseInt($input.val(), 10) || 1;
-    if (currentVal > 1) {
-      $input.val(currentVal - 1);
-    }
-  });
+  jQuery(document).on(
+    "click",
+    "#jwProductModal .jw_quantity .minus",
+    function (e) {
+      e.preventDefault();
+      var $input = jQuery(this).next("input");
+      var currentVal = parseInt($input.val(), 10) || 1;
+      if (currentVal > 1) {
+        $input.val(currentVal - 1);
+      }
+    },
+  );
 
   // Modal Accordion Toggle
-  jQuery(document).on("click", "#jwProductModal .jw_modal_acc_tab", function (e) {
-    e.preventDefault();
-    var $tab = jQuery(this);
-    var $item = $tab.closest(".jw_modal_acc_item");
-    var $content = $item.find(".jw_modal_acc_content");
-    var $icon = $tab.find(".accordion_icon");
+  jQuery(document).on(
+    "click",
+    "#jwProductModal .jw_modal_acc_tab",
+    function (e) {
+      e.preventDefault();
+      var $tab = jQuery(this);
+      var $item = $tab.closest(".jw_modal_acc_item");
+      var $content = $item.find(".jw_modal_acc_content");
+      var $icon = $tab.find(".accordion_icon");
 
-    if ($item.hasClass("active")) {
-      $item.removeClass("active");
-      $content.slideUp(250);
-      $icon.text("add");
-    } else {
-      // Close any other open accordion item in the modal (only one open at a time)
-      var $otherItems = $item.siblings(".jw_modal_acc_item.active");
-      $otherItems.removeClass("active");
-      $otherItems.find(".jw_modal_acc_content").slideUp(250);
-      $otherItems.find(".accordion_icon").text("add");
+      if ($item.hasClass("active")) {
+        $item.removeClass("active");
+        $content.slideUp(250);
+        $icon.text("add");
+      } else {
+        // Close any other open accordion item in the modal (only one open at a time)
+        var $otherItems = $item.siblings(".jw_modal_acc_item.active");
+        $otherItems.removeClass("active");
+        $otherItems.find(".jw_modal_acc_content").slideUp(250);
+        $otherItems.find(".accordion_icon").text("add");
 
-      $item.addClass("active");
-      $content.slideDown(250);
-      $icon.text("remove");
-    }
-  });
+        $item.addClass("active");
+        $content.slideDown(250);
+        $icon.text("remove");
+      }
+    },
+  );
 
   // Modal Add To Cart feedback
-  jQuery(document).on("click", "#jwProductModal .jw_modal_add_to_cart", function (e) {
-    e.preventDefault();
-    var $btn = jQuery(this);
-    var $btnText = $btn.find("h6");
-    var originalText = $btnText.text();
-    $btnText.text("Added to Cart ✓");
-    setTimeout(function () {
-      $btnText.text(originalText);
-    }, 1500);
-  });
+  jQuery(document).on(
+    "click",
+    "#jwProductModal .jw_modal_add_to_cart",
+    function (e) {
+      e.preventDefault();
+      var $btn = jQuery(this);
+      var $btnText = $btn.find("h6");
+      var originalText = $btnText.text();
+      $btnText.text("Added to Cart ✓");
+      setTimeout(function () {
+        $btnText.text(originalText);
+      }, 1500);
+    },
+  );
 });
 /*=========================== jw_contact us end ===========================*/
 
 $(document).ready(function () {
   // Ensure all input fields have an error message at the bottom
   // and the success message is shown at the bottom of the submit button.
-  $('form, .jw_newsletter_form').each(function () {
+  $("form, .jw_newsletter_form").each(function () {
     var $form = $(this);
 
     // Make newsletter inputs required
-    if ($form.hasClass('jw_newsletter_form')) {
-      $form.find('input').attr('required', true);
+    if ($form.hasClass("jw_newsletter_form")) {
+      $form.find("input").attr("required", true);
     }
 
     // 1. Inputs: add <p class="error-message"></p> after standard inputs and textareas if not present
-    $form.find('input:not([type="hidden"]):not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):not([type="search"]), textarea').each(function () {
-      var $input = $(this);
-      if ($form.hasClass('jw_newsletter_form')) {
-        if (!$form.children('.error-message').length) {
-          $form.append('<p class="error-message"></p>');
+    $form
+      .find(
+        'input:not([type="hidden"]):not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):not([type="search"]), textarea',
+      )
+      .each(function () {
+        var $input = $(this);
+        if ($form.hasClass("jw_newsletter_form")) {
+          if (!$form.children(".error-message").length) {
+            $form.append('<p class="error-message"></p>');
+          }
+        } else {
+          if (!$input.next(".error-message").length) {
+            $input.after('<p class="error-message"></p>');
+          }
         }
-      } else {
-        if (!$input.next('.error-message').length) {
-          $input.after('<p class="error-message"></p>');
-        }
-      }
-    });
+      });
 
     // 2. Success message: move to the bottom of the submit button
-    var $successMsg = $form.find('.success-message');
+    var $successMsg = $form.find(".success-message");
 
-    var $submitBtn = $form.find('button, input[type="submit"], a.bg-none-btn, a.bg-none-btn-two, a.jw_custom_buttom');
-    
+    var $submitBtn = $form.find(
+      'button, input[type="submit"], a.bg-none-btn, a.bg-none-btn-two, a.jw_custom_buttom',
+    );
+
     if ($submitBtn.length > 0) {
       if ($successMsg.length === 0) {
         $successMsg = $('<p class="success-message"></p>');
       }
-      if ($form.hasClass('jw_newsletter_form')) {
+      if ($form.hasClass("jw_newsletter_form")) {
         $form.append($successMsg);
       } else {
         $submitBtn.last().after($successMsg);
@@ -1262,22 +1281,29 @@ $(document).ready(function () {
     }
 
     // 3. Validation Logic
-    $submitBtn.on('click', function (e) {
+    $submitBtn.on("click", function (e) {
       var isValid = true;
 
-      $form.find('input[required], textarea[required]').each(function () {
+      $form.find("input[required], textarea[required]").each(function () {
         var $input = $(this);
-        var $errorMsg = $form.hasClass('jw_newsletter_form') ? $form.children('.error-message') : $input.next('.error-message');
-        var fieldName = $input.attr('placeholder') || $input.attr('name') || 'This field';
-        
-        if ($.trim($input.val()) === '') {
-          $errorMsg.text(fieldName + ' is required.').css({'color': 'red', 'margin-top': '10px', 'display': 'block'});
+        var $errorMsg = $form.hasClass("jw_newsletter_form")
+          ? $form.children(".error-message")
+          : $input.next(".error-message");
+        var fieldName =
+          $input.attr("placeholder") || $input.attr("name") || "This field";
+
+        if ($.trim($input.val()) === "") {
+          $errorMsg
+            .text(fieldName + " is required.")
+            .css({ color: "red", "margin-top": "10px", display: "block" });
           isValid = false;
         } else {
-          if ($input.attr('type') === 'email') {
+          if ($input.attr("type") === "email") {
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test($.trim($input.val()))) {
-              $errorMsg.text('Please enter a valid email address.').css({'color': 'red', 'margin-top': '10px', 'display': 'block'});
+              $errorMsg
+                .text("Please enter a valid email address.")
+                .css({ color: "red", "margin-top": "10px", display: "block" });
               isValid = false;
             } else {
               $errorMsg.hide();
@@ -1293,25 +1319,32 @@ $(document).ready(function () {
         $successMsg.hide();
       } else {
         e.preventDefault(); // Prevent page reload for demo template functionality
-        $successMsg.text('Form submitted successfully!').css({'color': 'green', 'margin-top': '10px', 'display': 'block'});
+        $successMsg
+          .text("Form submitted successfully!")
+          .css({ color: "green", "margin-top": "10px", display: "block" });
         if ($form[0].reset) {
           $form[0].reset(); // Clear all fields if it's an actual form
         } else {
-          $form.find('input').val('');
+          $form.find("input").val("");
         }
       }
     });
   });
 
   // Clear error messages on input change
-  $('form input, form textarea, .jw_newsletter_form input').on('input', function () {
-    var $wrapper = $(this).closest('.jw_newsletter_form').length ? $(this).closest('.jw_newsletter_form') : $(this).closest('form');
-    if ($wrapper.hasClass('jw_newsletter_form')) {
-      $wrapper.children('.error-message').hide();
-      $wrapper.children('.success-message').hide();
-    } else {
-      $(this).next('.error-message').hide();
-      $wrapper.find('.success-message').hide();
-    }
-  });
+  $("form input, form textarea, .jw_newsletter_form input").on(
+    "input",
+    function () {
+      var $wrapper = $(this).closest(".jw_newsletter_form").length
+        ? $(this).closest(".jw_newsletter_form")
+        : $(this).closest("form");
+      if ($wrapper.hasClass("jw_newsletter_form")) {
+        $wrapper.children(".error-message").hide();
+        $wrapper.children(".success-message").hide();
+      } else {
+        $(this).next(".error-message").hide();
+        $wrapper.find(".success-message").hide();
+      }
+    },
+  );
 });

@@ -4,7 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jawellery</title>
+	<title>Sign In - Pearl Jewellery</title>
+	<meta name="description"
+		content="Sign in to your Pearl Jewellery account to manage orders, wishlist and personal details.">
+	<meta name="robots" content="index, follow">
+	<link rel="icon" href="image/five-icon.svg" type="image/gif">
+
 	<link rel="icon" href="image/five-icon.svg" type="image/gif">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet"
@@ -18,19 +23,13 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.mixitup.min.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/jquery.ripples-min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/all.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+	<h1 class="sr-only">Sign In to Your Account</h1>
 
 	<div class="overlay"></div>
+
 	<!-- start-search-bar-content -->
 	<div class="jw_search_wrap">
 		<form class="search-log">
@@ -45,45 +44,66 @@
 			</div>
 			<div class="jw_mini_crat_product_col">
 				<div class="jw_mini_cart_product">
-					<div class="jw_mini_cart_product_img jw_about_images_cover">
-						<img src="image/images-19.webp" alt="cart">
+					<div class="jw_mini_cart_product_img">
+						<img decoding="sync" fetchpriority="high" loading="eager" src="image/images-19.webp" alt="cart">
 					</div>
-					<div>
-						<h5><a href="product-detail.html">Ring</a></h5>
-						<div class="jw_quantity">
-							<span class="minus">-</span>
-							<input type="text" value="1">
-							<span class="plus">+</span>
+					<div class="jw_mini_cart_description">
+						<div class="jw_mini_cart_product_content">
+							<div class="jw_product_name">
+								<h5 class="p2"><a href="product-detail.html">Ring</a></h5>
+								<a href="javascript:;" class="jw_mini_cart_remove">
+									<span!important class="material-symbols-sharp">close</span!important>
+								</a>
+
+							</div>
+							<div class="jw_quantity-price">
+								<div class="jw_quantity">
+									<span class="minus">-</span>
+									<input type="text" value="1">
+									<span class="plus">+</span>
+								</div>
+								<p class="p2"><span>$<span class="price">100</span></span></p>
+							</div>
 						</div>
-					</div>
-					<div>
-						<p><a href="javascript:;" class="jw_mini_cart_remove"><span
-									class="material-symbols-sharp">close</span></a></p>
-						<p><span>$<span class="price">100</span></span></p>
 					</div>
 				</div>
 			</div>
 			<div class="jw_mini_crat_totle">
-				<h5><span class="jw_totle_text">Total</span></h5>
-				<p><span class="jw_totle_price">$ 100</span></p>
+				<h5 class="p2"><span class="jw_totle_text">Total</span></h5>
+				<p class="p2"><span class="jw_totle_price">$ 100</span></p>
 			</div>
 		</div>
-		<a class="jw_custom_buttom" href="cart.html"><span>View Cart</span><span class="jw_arrow_sharp"><img
-					src="image/arrow.svg" alt="arrow"></span></a>
-		<a class="jw_custom_buttom" href="checkout.html"><span>Checkout</span><span class="jw_arrow_sharp"><img
-					src="image/arrow.svg" alt="arrow"></span></a>
+		<div class="jw_mini_action">
+			<a class="jw_custom_buttom-two" href="cart.html">
+				View Cart
+				<svg width="43" height="21" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+					class="jw_arrow-big">
+					<path d="M35.3516 8.14648L41.498 14L35.998 20.2071" stroke="currentColor" />
+					<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5" stroke="currentColor" />
+				</svg>
+
+			</a>
+			<a class="jw_custom_buttom-two" href="checkout.html">
+				Checkout
+				<svg width="43" height="21" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+					class="jw_arrow-big">
+					<path d="M35.3516 8.14648L41.498 14L35.998 20.2071" stroke="currentColor" />
+					<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5" stroke="currentColor" />
+				</svg>
+			</a>
+		</div>
 	</div>
 	<!-- start-search-bar-content -->
 
 	<!-- start_jw_menubar_wrap -->
 	<div class="jw_menubar_wrap">
 		<div class="jw_menubar_imgaes">
-			<img src="image/images-2.webp" alt="menubar">
+			<img decoding="async" loading="lazy" src="image/images-2.webp" alt="menubar">
 		</div>
 		<div class="jw_menubar_content">
 			<div class="jw_menubar_content_top">
 				<a href="index.html" class="jw_menubar_logo">
-					<img src="image/logo.svg" alt="menubar">
+					<img decoding="async" src="image/logo.svg" alt="menubar">
 				</a>
 				<a class="jw_menubar_close" href="javascript:;">
 					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +120,7 @@
 							d="M17.2646 10.3984L17.3506 10.6309L17.583 10.7168L26.4316 13.9902L17.583 17.2646L17.3506 17.3506L17.2646 17.583L13.9902 26.4316L10.7168 17.583L10.6309 17.3506L10.3984 17.2646L1.54883 13.9902L10.3984 10.7168L10.6309 10.6309L10.7168 10.3984L13.9902 1.54883L17.2646 10.3984Z"
 							stroke="white" stroke-width="1.07622" />
 					</svg>
-					<a href="index.html">Collection</a>
+					<a href="./shop_v1.html">Shop</a>
 				</li>
 				<li>
 					<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -143,18 +163,24 @@
 						</div>
 
 						<ul class="jw_dropdown_menu">
-							<li><a class="h4 jw_dropdown_item" href="index.html">Home</a></li>
-							<li><a class="h4 jw_dropdown_item" href="about.html">About</a></li>
-							<li><a class="h4 jw_dropdown_item" href="blog.html">Blog</a></li>
-							<li><a class="h4 jw_dropdown_item" href="blog-detail.html">Blog Detail</a></li>
-							<li><a class="h4 jw_dropdown_item" href="collection.html">Collection</a></li>
-							<li><a class="h4 jw_dropdown_item" href="single-product.html">Single Product</a></li>
-							<li><a class="h4 jw_dropdown_item" href="cart.html">cart</a></li>
-							<li><a class="h4 jw_dropdown_item" href="checkout.html">Checkout</a></li>
-							<li><a class="h4 jw_dropdown_item" href="contact.html">Contact</a></li>
-							<li><a class="h4 jw_dropdown_item" href="account-page.html">Account Page</a></li>
-							<li><a class="h4 jw_dropdown_item" href="error.html">Error</a></li>
-							<li><a class="h4 jw_dropdown_item" href="login.html">Login</a></li>
+							<li><a class="jw_dropdown_item" href="./index.html">Home - <span class="number">1</span></a>
+							</li>
+							<li><a class="jw_dropdown_item" href="./index-two.html">Home - <span
+										class="number">2</span></a></li>
+							<li><a class="jw_dropdown_item" href="./shop_v2.html">Shop - <span
+										class="number">2</span></a></li>
+							<li><a class="jw_dropdown_item" href="./shop_v3.html">Shop - <span
+										class="number">3</span></a></li>
+							<li><a class="jw_dropdown_item" href="./single-product.html">Single Product</a></li>
+							<li><a class="jw_dropdown_item" href="./blog-grid.html">Blog Grid</a></li>
+							<li><a class="jw_dropdown_item" href="./blogs-masonary.html">Blog Masonry</a></li>
+							<li><a class="jw_dropdown_item" href="./blog-detail.html">Blog Detail</a></li>
+							<li><a class="jw_dropdown_item" href="./wishlist.html">wishlist</a></li>
+							<li><a class="jw_dropdown_item" href="./faq.html">Faq</a></li>
+							<li><a class="jw_dropdown_item" href="./login.html">Login</a></li>
+							<li><a class="jw_dropdown_item" href="./compare.html">Compare</a></li>
+							<li><a class="jw_dropdown_item" href="./error.html"><span class="number">404</span></a></li>
+							<li><a class="jw_dropdown_item" href="./privacy-policy.html">Privacy Policy</a></li>
 						</ul>
 				</li>
 			</ul>
@@ -169,37 +195,35 @@
 				<ul class="jw_all_menu_btn jw_all_menu_btn_left">
 					<li class="jw_mobile_menu_icon">
 						<a href="javascript:;">
-							<svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-								xmlns="http://www.w3.org/2000/svg" class="nav-icons">
-								<path
-									d="M2.33203 7.00016C2.33203 6.69074 2.45495 6.394 2.67374 6.17521C2.89253 5.95641 3.18928 5.8335 3.4987 5.8335H24.4987C24.8081 5.8335 25.1049 5.95641 25.3237 6.17521C25.5424 6.394 25.6654 6.69074 25.6654 7.00016C25.6654 7.30958 25.5424 7.60633 25.3237 7.82512C25.1049 8.04391 24.8081 8.16683 24.4987 8.16683H3.4987C3.18928 8.16683 2.89253 8.04391 2.67374 7.82512C2.45495 7.60633 2.33203 7.30958 2.33203 7.00016ZM2.33203 14.0375C2.33203 13.7281 2.45495 13.4313 2.67374 13.2125C2.89253 12.9937 3.18928 12.8708 3.4987 12.8708H24.4987C24.8081 12.8708 25.1049 12.9937 25.3237 13.2125C25.5424 13.4313 25.6654 13.7281 25.6654 14.0375C25.6654 14.3469 25.5424 14.6437 25.3237 14.8625C25.1049 15.0812 24.8081 15.2042 24.4987 15.2042H3.4987C3.18928 15.2042 2.89253 15.0812 2.67374 14.8625C2.45495 14.6437 2.33203 14.3469 2.33203 14.0375ZM3.4987 19.9082C3.18928 19.9082 2.89253 20.0311 2.67374 20.2499C2.45495 20.4687 2.33203 20.7654 2.33203 21.0748C2.33203 21.3842 2.45495 21.681 2.67374 21.8998C2.89253 22.1186 3.18928 22.2415 3.4987 22.2415H24.4987C24.8081 22.2415 25.1049 22.1186 25.3237 21.8998C25.5424 21.681 25.6654 21.3842 25.6654 21.0748C25.6654 20.7654 25.5424 20.4687 25.3237 20.2499C25.1049 20.0311 24.8081 19.9082 24.4987 19.9082H3.4987Z"
-									fill="currentColor" />
-							</svg>
+							<img decoding="async" src="image/figma/icon-menu.svg" alt="menu"
+								class="nav-icons nav-icon-menu" width="28" height="28">
 						</a>
 					</li>
 					<li class="jw_mobile_search_btn">
 						<a href="javascript:;">
-							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none"
 								xmlns="http://www.w3.org/2000/svg" class="nav-icons">
 								<path
-									d="M24 25L18.8057 19.7964M21.6842 12.8421C21.6842 15.4524 20.6473 17.9558 18.8015 19.8015C16.9558 21.6473 14.4524 22.6842 11.8421 22.6842C9.23182 22.6842 6.72844 21.6473 4.88269 19.8015C3.03693 17.9558 2 15.4524 2 12.8421C2 10.2318 3.03693 7.72844 4.88269 5.88269C6.72844 4.03693 9.23182 3 11.8421 3C14.4524 3 16.9558 4.03693 18.8015 5.88269C20.6473 7.72844 21.6842 10.2318 21.6842 12.8421Z"
-									stroke="#153462" stroke-width="2" stroke-linecap="round" />
+									d="M22.58 22.58L18.1932 18.1853M20.6242 12.3121C20.6242 14.5166 19.7485 16.6308 18.1897 18.1897C16.6308 19.7485 14.5166 20.6242 12.3121 20.6242C10.1076 20.6242 7.99338 19.7485 6.43456 18.1897C4.87574 16.6308 4 14.5166 4 12.3121C4 10.1076 4.87574 7.99338 6.43456 6.43456C7.99338 4.87574 10.1076 4 12.3121 4C14.5166 4 16.6308 4.87574 18.1897 6.43456C19.7485 7.99338 20.6242 10.1076 20.6242 12.3121V12.3121Z"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round" />
 							</svg>
+
 						</a>
 					</li>
 				</ul>
 				<div class="jw_header_logo_content">
-					<a href="index.html"><img src="image/logo.svg" alt="logo"></a>
+					<a href="index.html"><img decoding="async" src="image/logo.svg" alt="logo"></a>
 				</div>
 				<ul class="jw_all_menu_btn jw_all_menu_btn_right">
 					<li class="jw_search_btn">
 						<a href="javascript:;">
-							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none"
 								xmlns="http://www.w3.org/2000/svg" class="nav-icons">
 								<path
-									d="M24 25L18.8057 19.7964M21.6842 12.8421C21.6842 15.4524 20.6473 17.9558 18.8015 19.8015C16.9558 21.6473 14.4524 22.6842 11.8421 22.6842C9.23182 22.6842 6.72844 21.6473 4.88269 19.8015C3.03693 17.9558 2 15.4524 2 12.8421C2 10.2318 3.03693 7.72844 4.88269 5.88269C6.72844 4.03693 9.23182 3 11.8421 3C14.4524 3 16.9558 4.03693 18.8015 5.88269C20.6473 7.72844 21.6842 10.2318 21.6842 12.8421Z"
+									d="M22.58 22.58L18.1932 18.1853M20.6242 12.3121C20.6242 14.5166 19.7485 16.6308 18.1897 18.1897C16.6308 19.7485 14.5166 20.6242 12.3121 20.6242C10.1076 20.6242 7.99338 19.7485 6.43456 18.1897C4.87574 16.6308 4 14.5166 4 12.3121C4 10.1076 4.87574 7.99338 6.43456 6.43456C7.99338 4.87574 10.1076 4 12.3121 4C14.5166 4 16.6308 4.87574 18.1897 6.43456C19.7485 7.99338 20.6242 10.1076 20.6242 12.3121V12.3121Z"
 									stroke="#153462" stroke-width="2" stroke-linecap="round" />
 							</svg>
+
 
 						</a>
 					</li>
@@ -263,7 +287,8 @@
 										<a class="bg-none-btn-two" href="javascript:;">
 											<h6>Register</h6>
 											<svg width="43" height="21" viewBox="0 0 43 21" fill="none"
-												xmlns="http://www.w3.org/2000/svg" class="jw_arrow-medium">
+												xmlns="http://www.w3.org/2000/svg"
+												class="jw_arrow_sharp jw_arrow-medium">
 												<path d="M35.3516 8.14648L41.498 14L35.998 20.2071"
 													stroke="currentColor" />
 												<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5"
@@ -302,7 +327,8 @@
 										<a class="bg-none-btn-two" href="javascript:;">
 											<h6>Log in</h6>
 											<svg width="43" height="21" viewBox="0 0 43 21" fill="none"
-												xmlns="http://www.w3.org/2000/svg" class="jw_arrow-medium">
+												xmlns="http://www.w3.org/2000/svg"
+												class="jw_arrow_sharp jw_arrow-medium">
 												<path d="M35.3516 8.14648L41.498 14L35.998 20.2071"
 													stroke="currentColor" />
 												<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5"
@@ -324,7 +350,8 @@
 										<a class="bg-none-btn-two" href="javascript:;">
 											<h6>Send</h6>
 											<svg width="43" height="21" viewBox="0 0 43 21" fill="none"
-												xmlns="http://www.w3.org/2000/svg" class="jw_arrow-medium">
+												xmlns="http://www.w3.org/2000/svg"
+												class="jw_arrow_sharp jw_arrow-medium">
 												<path d="M35.3516 8.14648L41.498 14L35.998 20.2071"
 													stroke="currentColor" />
 												<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5"
@@ -346,7 +373,8 @@
 										<a class="bg-none-btn-two" href="javascript:;">
 											<h6>Send</h6>
 											<svg width="43" height="21" viewBox="0 0 43 21" fill="none"
-												xmlns="http://www.w3.org/2000/svg" class="jw_arrow-medium">
+												xmlns="http://www.w3.org/2000/svg"
+												class="jw_arrow_sharp jw_arrow-medium">
 												<path d="M35.3516 8.14648L41.498 14L35.998 20.2071"
 													stroke="currentColor" />
 												<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5"
@@ -378,11 +406,11 @@
 		<div class="container">
 			<div class="jw_footer_wrap">
 				<div class="jw_footer_logo_content">
-					<a href="index.html"><img src="image/footer_logo.svg" alt="FOoter_Logo"></a>
+					<a href="index.html"><img decoding="async" src="image/footer_logo.svg" alt="FOoter_Logo"></a>
 				</div>
 				<div class="jw_footer_contact_wrap">
 					<ul>
-						<li><a href="collection.html">Collection</a></li>
+						<li><a href="shop_v1.html">Shop</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="contact.html">Contact</a></li>
@@ -409,10 +437,18 @@
 	</footer>	 -->
 	<!-- close_jw_footer -->
 
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/scroll-parallax.js"></script>
-	<script src="js/scroll-zoom.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/jquery.min.js" defer></script>
+	<script src="js/jquery.mixitup.min.js" defer></script>
+	<script src="js/waypoints.min.js" defer></script>
+	<script src="js/jquery.ripples-min.js" defer></script>
+	<script src="js/aos.js" defer></script>
+	<script src="js/all.min.js" defer></script>
+	<script src="js/jquery.magnific-popup.min.js" defer></script>
+	<script src="js/swiper-bundle.min.js" defer></script>
+	<script src="js/imagesloaded.pkgd.min.js" defer></script>
+	<script src="js/scroll-parallax.js" defer></script>
+	<script src="js/scroll-zoom.js" defer></script>
+	<script src="js/custom.js" defer></script>
 </body>
 
 </html>

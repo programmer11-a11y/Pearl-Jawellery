@@ -4,7 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jawellery</title>
+	<title>Pearl Jewellers - Handcrafted Fine Jewellery</title>
+	<meta name="description"
+		content="Explore Pearl Jewellers handcrafted jewellery collections. Shop rings, pendants, earrings and more.">
+	<meta name="robots" content="index, follow">
+	<link rel="icon" href="image/five-icon.svg" type="image/gif">
+
 	<link rel="icon" href="image/five-icon.svg" type="image/gif">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet"
@@ -18,14 +23,6 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.mixitup.min.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/jquery.ripples-min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/all.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -47,7 +44,7 @@
 			<div class="jw_mini_crat_product_col">
 				<div class="jw_mini_cart_product">
 					<div class="jw_mini_cart_product_img">
-						<img src="image/images-19.webp" alt="cart">
+						<img decoding="sync" fetchpriority="high" loading="eager" src="image/images-19.webp" alt="cart">
 					</div>
 					<div class="jw_mini_cart_description">
 						<div class="jw_mini_cart_product_content">
@@ -56,7 +53,6 @@
 								<a href="javascript:;" class="jw_mini_cart_remove">
 									<span!important class="material-symbols-sharp">close</span!important>
 								</a>
-
 							</div>
 							<div class="jw_quantity-price">
 								<div class="jw_quantity">
@@ -75,35 +71,36 @@
 				<p class="p2"><span class="jw_totle_price">$ 100</span></p>
 			</div>
 		</div>
-		<a class="jw_custom_buttom-two" href="cart.html">
-			View Cart
-
-			<svg width="43" height="21" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M35.3516 8.14648L41.498 14L35.998 20.2071" stroke="currentColor" />
-				<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5" stroke="currentColor" />
-			</svg>
-
-		</a>
-		<a class="jw_custom_buttom-two" href="checkout.html">
-			Checkout
-
-			<svg width="43" height="21" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M35.3516 8.14648L41.498 14L35.998 20.2071" stroke="currentColor" />
-				<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5" stroke="currentColor" />
-			</svg>
-		</a>
+		<div class="jw_mini_action">
+			<a class="jw_custom_buttom-two" href="cart.html">
+				View Cart
+				<svg width="43" height="21" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+					class="jw_arrow-big">
+					<path d="M35.3516 8.14648L41.498 14L35.998 20.2071" stroke="currentColor" />
+					<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5" stroke="currentColor" />
+				</svg>
+			</a>
+			<a class="jw_custom_buttom-two" href="checkout.html">
+				Checkout
+				<svg width="43" height="21" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+					class="jw_arrow-big">
+					<path d="M35.3516 8.14648L41.498 14L35.998 20.2071" stroke="currentColor" />
+					<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5" stroke="currentColor" />
+				</svg>
+			</a>
+		</div>
 	</div>
 	<!-- start-search-bar-content -->
 
 	<!-- start_jw_menubar_wrap -->
 	<div class="jw_menubar_wrap">
 		<div class="jw_menubar_imgaes">
-			<img src="image/images-2.webp" alt="">
+			<img decoding="async" loading="lazy" src="image/images-2.webp" alt="">
 		</div>
 		<div class="jw_menubar_content">
 			<div class="jw_menubar_content_top">
 				<a href="index.html" class="jw_menubar_logo">
-					<img src="image/logo.svg" alt="">
+					<img decoding="async" src="image/logo.svg" alt="">
 				</a>
 				<a class="jw_menubar_close" href="javascript:;">
 					<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +117,7 @@
 							d="M17.2646 10.3984L17.3506 10.6309L17.583 10.7168L26.4316 13.9902L17.583 17.2646L17.3506 17.3506L17.2646 17.583L13.9902 26.4316L10.7168 17.583L10.6309 17.3506L10.3984 17.2646L1.54883 13.9902L10.3984 10.7168L10.6309 10.6309L10.7168 10.3984L13.9902 1.54883L17.2646 10.3984Z"
 							stroke="white" stroke-width="1.07622" />
 					</svg>
-					<a href="index.html">Collection</a>
+					<a href="./shop_v1.html">Shop</a>
 				</li>
 				<li>
 					<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -158,24 +155,31 @@
 									d="M17.2646 10.3984L17.3506 10.6309L17.583 10.7168L26.4316 13.9902L17.583 17.2646L17.3506 17.3506L17.2646 17.583L13.9902 26.4316L10.7168 17.583L10.6309 17.3506L10.3984 17.2646L1.54883 13.9902L10.3984 10.7168L10.6309 10.6309L10.7168 10.3984L13.9902 1.54883L17.2646 10.3984Z"
 									stroke="white" stroke-width="1.07622" />
 							</svg>
-							<a href="javascript:;" class="jw_dropdown_click">Page <span
-									class="material-symbols-sharp">expand_more</span></a>
+							<a href="javascript:;" class="jw_dropdown_click">Page
+								<span class="material-symbols-sharp">expand_more</span></a>
 						</div>
-
 						<ul class="jw_dropdown_menu">
-							<li><a class="h4 jw_dropdown_item" href="index.html">Home</a></li>
-							<li><a class="h4 jw_dropdown_item" href="about.html">About</a></li>
-							<li><a class="h4 jw_dropdown_item" href="blog.html">Blog</a></li>
-							<li><a class="h4 jw_dropdown_item" href="blog-detail.html">Blog Detail</a></li>
-							<li><a class="h4 jw_dropdown_item" href="collection.html">Collection</a></li>
-							<li><a class="h4 jw_dropdown_item" href="single-product.html">Single Product</a></li>
-							<li><a class="h4 jw_dropdown_item" href="cart.html">cart</a></li>
-							<li><a class="h4 jw_dropdown_item" href="checkout.html">Checkout</a></li>
-							<li><a class="h4 jw_dropdown_item" href="contact.html">Contact</a></li>
-							<li><a class="h4 jw_dropdown_item" href="account-page.html">Account Page</a></li>
-							<li><a class="h4 jw_dropdown_item" href="error.html">Error</a></li>
-							<li><a class="h4 jw_dropdown_item" href="login.html">Login</a></li>
+							<li><a class="jw_dropdown_item" href="./index.html">Home - <span class="number">1</span></a>
+							</li>
+							<li><a class="jw_dropdown_item" href="./index-two.html">Home - <span
+										class="number">2</span></a></li>
+							<li><a class="jw_dropdown_item" href="./shop_v2.html">Shop - <span
+										class="number">2</span></a></li>
+							<li><a class="jw_dropdown_item" href="./shop_v3.html">Shop - <span
+										class="number">3</span></a></li>
+							<li><a class="jw_dropdown_item" href="./single-product.html">Single Product</a></li>
+							<li><a class="jw_dropdown_item" href="./blog-grid.html">Blog Grid</a></li>
+							<li><a class="jw_dropdown_item" href="./blogs-masonary.html">Blog Masonry</a></li>
+							<li><a class="jw_dropdown_item" href="./blog-detail.html">Blog Detail</a></li>
+							<li><a class="jw_dropdown_item" href="./wishlist.html">wishlist</a></li>
+							<li><a class="jw_dropdown_item" href="./faq.html">Faq</a></li>
+							<li><a class="jw_dropdown_item" href="./login.html">Login</a></li>
+							<li><a class="jw_dropdown_item" href="./compare.html">Compare</a></li>
+							<li><a class="jw_dropdown_item" href="./error.html"><span class="number">404</span></a>
+							</li>
+							<li><a class="jw_dropdown_item" href="./privacy-policy.html">Privacy Policy</a></li>
 						</ul>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -205,7 +209,7 @@
 					</li>
 				</ul>
 				<div class="jw_header_logo_content">
-					<a href="index.html"><img src="image/logo.svg" alt=""></a>
+					<a href="index.html"><img decoding="async" src="image/logo.svg" alt=""></a>
 				</div>
 				<ul class="jw_all_menu_btn jw_all_menu_btn_right">
 					<li class="jw_search_btn">
@@ -354,17 +358,17 @@
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
 											<div class="jw_features_images">
-												<img src="image/features_1.webp" alt="">
+												<img decoding="async" loading="lazy" src="image/features_1.webp" alt="">
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="jw_features_images">
-												<img src="image/features_2.webp" alt="">
+												<img decoding="async" loading="lazy" src="image/features_2.webp" alt="">
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="jw_features_images">
-												<img src="image/features_3.webp" alt="">
+												<img decoding="async" loading="lazy" src="image/features_3.webp" alt="">
 											</div>
 										</div>
 									</div>
@@ -382,11 +386,13 @@
 									<div class="jw_best_collection_col_top">
 										<div class="jw_best_collection_images jw_best_collection_images_left jw_data_title content__item"
 											data-title="Want some news bracelate">
-											<img class="content__item-img" src="image/bcollection1.webp" alt="">
+											<img decoding="async" loading="lazy" class="content__item-img"
+												src="image/bcollection1.webp" alt="">
 										</div>
 										<div class="jw_best_collection_images jw_best_collection_images_right jw_data_title content__item"
 											data-title="Want some news Neckless">
-											<img class="content__item-img" src="image/bcollection3.webp" alt="">
+											<img decoding="async" loading="lazy" class="content__item-img"
+												src="image/bcollection3.webp" alt="">
 										</div>
 									</div>
 									<div class="jw_best_collection_form_content">
@@ -410,11 +416,13 @@
 									<div class="jw_best_collection_col_bottom">
 										<div class="jw_best_collection_images jw_best_collection_images_left jw_data_title content__item"
 											data-title="Want some news Rings">
-											<img class="content__item-img" src="image/bcollection2.webp" alt="">
+											<img decoding="async" loading="lazy" class="content__item-img"
+												src="image/bcollection2.webp" alt="">
 										</div>
 										<div class="jw_best_collection_images jw_best_collection_images_right jw_data_title content__item"
 											data-title="Want some news Earings">
-											<img class="content__item-img" src="image/bcollection4.webp" alt="">
+											<img decoding="async" loading="lazy" class="content__item-img"
+												src="image/bcollection4.webp" alt="">
 										</div>
 									</div>
 								</div>
@@ -429,14 +437,14 @@
 						<div class="container">
 							<div class="jw_explore_more_content section-title">
 								<h3 data-aos="fade-right">Explore More</h3>
-								<p class="p2" data-aos="fade-right" data-aos-duration="1000">Exercitation ullamco
-									laboris nisi ut
-									aliquip ex ea commodo consequat luptat</p>
+								<p class="p2" data-aos="fade-right" data-aos-duration="1000">
+									Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat luptat</p>
 							</div>
 							<div class="jw_explore_more_wrap">
 								<div class="jw_explore_more_images" data-aos="zoom-in" data-aos-duration="1000">
 									<a href="./shop_v2.html">
-										<img src="image/features-1.webp" alt="" class="content__item-img" />
+										<img decoding="async" loading="lazy" src="image/features-1.webp" alt=""
+											class="content__item-img" />
 									</a>
 									<a href="./shop_v2.html" class="content__item-title">
 										<div class="features_title">
@@ -457,7 +465,8 @@
 								</div>
 								<div class="jw_explore_more_images" data-aos="zoom-in" data-aos-duration="1000">
 									<a href="./shop_v2.html">
-										<img src="image/features-2.webp" alt="" class="content__item-img" />
+										<img decoding="async" loading="lazy" src="image/features-2.webp" alt=""
+											class="content__item-img" />
 									</a>
 									<a href="./shop_v2.html" class="content__item-title">
 										<div class="features_title">
@@ -478,7 +487,8 @@
 								</div>
 								<div class="jw_explore_more_images" data-aos="zoom-in" data-aos-duration="1000">
 									<a href="./shop_v2.html">
-										<img src="image/features-3.webp" alt="" class="content__item-img" />
+										<img decoding="async" loading="lazy" src="image/features-3.webp" alt=""
+											class="content__item-img" />
 									</a>
 									<a href="./shop_v2.html" class="content__item-title">
 										<div class="features_title">
@@ -499,7 +509,8 @@
 								</div>
 								<div class="jw_explore_more_images" data-aos="zoom-in" data-aos-duration="1000">
 									<a href="./shop_v2.html">
-										<img src="image/features-4.webp" alt="" class="content__item-img" />
+										<img decoding="async" loading="lazy" src="image/features-4.webp" alt=""
+											class="content__item-img" />
 									</a>
 									<a href="./shop_v2.html" class="content__item-title">
 										<div class="features_title">
@@ -538,7 +549,8 @@
 							<div class="jw_video_wrapper">
 								<div class="jw_video_wrap" data-aos="fade-up" data-aos-duration="1000">
 									<div class="jw_video_images jw_images_cover content__item">
-										<img class="content__item-img" src="image/video.webp" alt="">
+										<img decoding="async" loading="lazy" class="content__item-img"
+											src="image/video.webp" alt="">
 										<div class="jw_video_content_wrap">
 											<div class="content__item-title">
 												<h5 class="jw_sub_wrap">Jawellery Store</h5>
@@ -597,12 +609,12 @@
 																			<div class="jw_collection_wrap">
 																				<div class="jw_collection_images jw_images_cover content__item" data-aos="zoom-in"
 																				data-aos-duration="1000">
-																				<img class="content__item-img" src="image/images-4.webp" alt="">
+																				<img decoding="async" loading="lazy" class="content__item-img" src="image/images-4.webp" alt="">
 																				<div class="content__item-title"></div>
 																			</div>
 																			<div class="jw_collection_images jw_images_cover content__item" data-aos="zoom-in"
 																			data-aos-duration="1000">
-																			<img class="content__item-img" src="image/images-5.webp" alt="">
+																			<img decoding="async" loading="lazy" class="content__item-img" src="image/images-5.webp" alt="">
 																			<div class="content__item-title"></div>
 																		</div>
 																	</div>
@@ -643,59 +655,182 @@
 							<div class="jw_featured-Product_wrap" data-aos="fade-up" data-aos-duration="1000">
 								<div class="swiper mySwiper">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide jw_data_title" data-title="Earings">
-											<div class="jw_featured-Product_card_box">
-												<div class="jw_featured-Product_images jw_images_cover">
-													<img src="image/shop_1.webp" alt="">
-													<ul class="product-extra-link">
-														<li class="addtocart-link">
-															<a href="javascript:;">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<g clip-path="url(#clip0_1_319)">
+										<div class="swiper-slide" data-title="Earings">
+											<div class="jw_data_title" data-title="Earings">
+												<div class="jw_featured-Product_card_box">
+													<div class="jw_featured-Product_images jw_images_cover">
+														<img decoding="async" loading="lazy" src="image/shop_1.webp"
+															alt="">
+														<ul class="product-extra-link">
+															<li class="addtocart-link">
+																<a href="javascript:;">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<g clip-path="url(#clip0_1_319)">
+																			<path
+																				d="M16.1691 19.9375H5.85658C5.28286 19.9374 4.71674 19.8062 4.2014 19.5541C3.68607 19.3019 3.23513 18.9353 2.88299 18.4824C2.53085 18.0295 2.28681 17.5021 2.16947 16.9405C2.05214 16.3789 2.06462 15.7979 2.20595 15.2419L4.29595 6.70999C4.3336 6.55745 4.42235 6.4224 4.54744 6.32733C4.67253 6.23227 4.82641 6.18291 4.98345 6.18749H16.4991C16.6507 6.18054 16.8004 6.22399 16.9248 6.31105C17.0491 6.3981 17.1412 6.52387 17.1866 6.66874L19.7853 15.0287C19.963 15.5966 20.0039 16.1983 19.9048 16.785C19.8056 17.3716 19.5691 17.9265 19.2147 18.4044C18.8661 18.8842 18.4077 19.2738 17.8779 19.5405C17.3481 19.8072 16.7622 19.9433 16.1691 19.9375ZM5.49908 7.56249L3.51221 15.5719C3.42373 15.9252 3.41664 16.2941 3.49147 16.6506C3.5663 17.0071 3.7211 17.342 3.9442 17.63C4.1673 17.9179 4.45287 18.1515 4.77938 18.313C5.10588 18.4746 5.46481 18.5599 5.82908 18.5625H16.1416C16.5157 18.5631 16.8847 18.4749 17.2181 18.3052C17.5516 18.1355 17.84 17.8891 18.0597 17.5862C18.2857 17.2817 18.4366 16.928 18.4999 16.554C18.5632 16.18 18.5372 15.7964 18.4241 15.4344L16.0041 7.56249H5.49908Z"
+																				fill="currentColor" />
+																			<path
+																				d="M13.75 11.6875C13.5677 11.6875 13.3928 11.6151 13.2639 11.4861C13.1349 11.3572 13.0625 11.1823 13.0625 11V5.5C13.0625 4.95299 12.8452 4.42839 12.4584 4.04159C12.0716 3.6548 11.547 3.4375 11 3.4375C10.453 3.4375 9.92839 3.6548 9.54159 4.04159C9.1548 4.42839 8.9375 4.95299 8.9375 5.5V11C8.9375 11.1823 8.86507 11.3572 8.73614 11.4861C8.6072 11.6151 8.43234 11.6875 8.25 11.6875C8.06766 11.6875 7.8928 11.6151 7.76386 11.4861C7.63493 11.3572 7.5625 11.1823 7.5625 11V5.5C7.5625 4.58832 7.92466 3.71398 8.56932 3.06932C9.21398 2.42466 10.0883 2.0625 11 2.0625C11.9117 2.0625 12.786 2.42466 13.4307 3.06932C14.0753 3.71398 14.4375 4.58832 14.4375 5.5V11C14.4375 11.1823 14.3651 11.3572 14.2361 11.4861C14.1072 11.6151 13.9323 11.6875 13.75 11.6875Z"
+																				fill="currentColor" />
+																		</g>
+																	</svg>
+																</a>
+															</li>
+															<li class="addtocart-link">
+																<a href="javascript:;">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path
-																			d="M16.1691 19.9375H5.85658C5.28286 19.9374 4.71674 19.8062 4.2014 19.5541C3.68607 19.3019 3.23513 18.9353 2.88299 18.4824C2.53085 18.0295 2.28681 17.5021 2.16947 16.9405C2.05214 16.3789 2.06462 15.7979 2.20595 15.2419L4.29595 6.70999C4.3336 6.55745 4.42235 6.4224 4.54744 6.32733C4.67253 6.23227 4.82641 6.18291 4.98345 6.18749H16.4991C16.6507 6.18054 16.8004 6.22399 16.9248 6.31105C17.0491 6.3981 17.1412 6.52387 17.1866 6.66874L19.7853 15.0287C19.963 15.5966 20.0039 16.1983 19.9048 16.785C19.8056 17.3716 19.5691 17.9265 19.2147 18.4044C18.8661 18.8842 18.4077 19.2738 17.8779 19.5405C17.3481 19.8072 16.7622 19.9433 16.1691 19.9375ZM5.49908 7.56249L3.51221 15.5719C3.42373 15.9252 3.41664 16.2941 3.49147 16.6506C3.5663 17.0071 3.7211 17.342 3.9442 17.63C4.1673 17.9179 4.45287 18.1515 4.77938 18.313C5.10588 18.4746 5.46481 18.5599 5.82908 18.5625H16.1416C16.5157 18.5631 16.8847 18.4749 17.2181 18.3052C17.5516 18.1355 17.84 17.8891 18.0597 17.5862C18.2857 17.2817 18.4366 16.928 18.4999 16.554C18.5632 16.18 18.5372 15.7964 18.4241 15.4344L16.0041 7.56249H5.49908Z"
-																			fill="currentColor" />
+																			d="M6.43848 3.75H6.55566C7.8822 3.75009 9.15385 4.2769 10.0918 5.21484L10.4697 5.59277C10.6104 5.73343 10.8011 5.8125 11 5.8125C11.1989 5.8125 11.3896 5.73343 11.5303 5.59277L11.9082 5.21484C12.8461 4.2769 14.1178 3.75009 15.4443 3.75H15.5615C18.3236 3.75 20.5625 5.98894 20.5625 8.75098C20.5625 10.1374 19.9869 11.4605 18.9736 12.4062L11 19.8486L3.02637 12.4062C2.01307 11.4605 1.43751 10.1374 1.4375 8.75098C1.4375 5.98894 3.67644 3.75 6.43848 3.75Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-miterlimit="10"
+																			stroke-linejoin="round" />
+																	</svg>
+																</a>
+															</li>
+															<li class="addtocart-link">
+																<a href="./single-product.html">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path
-																			d="M13.75 11.6875C13.5677 11.6875 13.3928 11.6151 13.2639 11.4861C13.1349 11.3572 13.0625 11.1823 13.0625 11V5.5C13.0625 4.95299 12.8452 4.42839 12.4584 4.04159C12.0716 3.6548 11.547 3.4375 11 3.4375C10.453 3.4375 9.92839 3.6548 9.54159 4.04159C9.1548 4.42839 8.9375 4.95299 8.9375 5.5V11C8.9375 11.1823 8.86507 11.3572 8.73614 11.4861C8.6072 11.6151 8.43234 11.6875 8.25 11.6875C8.06766 11.6875 7.8928 11.6151 7.76386 11.4861C7.63493 11.3572 7.5625 11.1823 7.5625 11V5.5C7.5625 4.58832 7.92466 3.71398 8.56932 3.06932C9.21398 2.42466 10.0883 2.0625 11 2.0625C11.9117 2.0625 12.786 2.42466 13.4307 3.06932C14.0753 3.71398 14.4375 4.58832 14.4375 5.5V11C14.4375 11.1823 14.3651 11.3572 14.2361 11.4861C14.1072 11.6151 13.9323 11.6875 13.75 11.6875Z"
-																			fill="currentColor" />
-																	</g>
-																</svg>
-															</a>
-														</li>
-														<li class="addtocart-link">
-															<a href="javascript:;">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path
-																		d="M6.43848 3.75H6.55566C7.8822 3.75009 9.15385 4.2769 10.0918 5.21484L10.4697 5.59277C10.6104 5.73343 10.8011 5.8125 11 5.8125C11.1989 5.8125 11.3896 5.73343 11.5303 5.59277L11.9082 5.21484C12.8461 4.2769 14.1178 3.75009 15.4443 3.75H15.5615C18.3236 3.75 20.5625 5.98894 20.5625 8.75098C20.5625 10.1374 19.9869 11.4605 18.9736 12.4062L11 19.8486L3.02637 12.4062C2.01307 11.4605 1.43751 10.1374 1.4375 8.75098C1.4375 5.98894 3.67644 3.75 6.43848 3.75Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-miterlimit="10"
-																		stroke-linejoin="round" />
-																</svg>
-															</a>
-														</li>
-														<li class="addtocart-link">
-															<a href="./single-product.html">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path
-																		d="M0.914062 11C0.914062 11 4.58073 3.66663 10.9974 3.66663C17.4141 3.66663 21.0807 11 21.0807 11C21.0807 11 17.4141 18.3333 10.9974 18.3333C4.58073 18.3333 0.914062 11 0.914062 11Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round" />
-																	<path
-																		d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round" />
-																</svg>
-															</a>
-														</li>
-													</ul>
-													<div class="jw_featured-Product_card_box_content">
-														<h5><a href="./single-product.html">Earings</a></h5>
-														<p>$ 50</p>
+																			d="M0.914062 11C0.914062 11 4.58073 3.66663 10.9974 3.66663C17.4141 3.66663 21.0807 11 21.0807 11C21.0807 11 17.4141 18.3333 10.9974 18.3333C4.58073 18.3333 0.914062 11 0.914062 11Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																		<path
+																			d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</svg>
+																</a>
+															</li>
+														</ul>
+														<div class="jw_featured-Product_card_box_content">
+															<h5><a href="./single-product.html">Earings</a></h5>
+															<p>$ 50</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide" data-title="Earings">
+											<div class="jw_data_title" data-title="Earings">
+												<div class="jw_featured-Product_card_box">
+													<div class="jw_featured-Product_images jw_images_cover">
+														<img decoding="async" loading="lazy" src="image/shop_2.webp"
+															alt="">
+														<ul class="product-extra-link">
+															<li class="addtocart-link">
+																<a href="javascript:;">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<g clip-path="url(#clip0_1_319)">
+																			<path
+																				d="M16.1691 19.9375H5.85658C5.28286 19.9374 4.71674 19.8062 4.2014 19.5541C3.68607 19.3019 3.23513 18.9353 2.88299 18.4824C2.53085 18.0295 2.28681 17.5021 2.16947 16.9405C2.05214 16.3789 2.06462 15.7979 2.20595 15.2419L4.29595 6.70999C4.3336 6.55745 4.42235 6.4224 4.54744 6.32733C4.67253 6.23227 4.82641 6.18291 4.98345 6.18749H16.4991C16.6507 6.18054 16.8004 6.22399 16.9248 6.31105C17.0491 6.3981 17.1412 6.52387 17.1866 6.66874L19.7853 15.0287C19.963 15.5966 20.0039 16.1983 19.9048 16.785C19.8056 17.3716 19.5691 17.9265 19.2147 18.4044C18.8661 18.8842 18.4077 19.2738 17.8779 19.5405C17.3481 19.8072 16.7622 19.9433 16.1691 19.9375ZM5.49908 7.56249L3.51221 15.5719C3.42373 15.9252 3.41664 16.2941 3.49147 16.6506C3.5663 17.0071 3.7211 17.342 3.9442 17.63C4.1673 17.9179 4.45287 18.1515 4.77938 18.313C5.10588 18.4746 5.46481 18.5599 5.82908 18.5625H16.1416C16.5157 18.5631 16.8847 18.4749 17.2181 18.3052C17.5516 18.1355 17.84 17.8891 18.0597 17.5862C18.2857 17.2817 18.4366 16.928 18.4999 16.554C18.5632 16.18 18.5372 15.7964 18.4241 15.4344L16.0041 7.56249H5.49908Z"
+																				fill="currentColor" />
+																			<path
+																				d="M13.75 11.6875C13.5677 11.6875 13.3928 11.6151 13.2639 11.4861C13.1349 11.3572 13.0625 11.1823 13.0625 11V5.5C13.0625 4.95299 12.8452 4.42839 12.4584 4.04159C12.0716 3.6548 11.547 3.4375 11 3.4375C10.453 3.4375 9.92839 3.6548 9.54159 4.04159C9.1548 4.42839 8.9375 4.95299 8.9375 5.5V11C8.9375 11.1823 8.86507 11.3572 8.73614 11.4861C8.6072 11.6151 8.43234 11.6875 8.25 11.6875C8.06766 11.6875 7.8928 11.6151 7.76386 11.4861C7.63493 11.3572 7.5625 11.1823 7.5625 11V5.5C7.5625 4.58832 7.92466 3.71398 8.56932 3.06932C9.21398 2.42466 10.0883 2.0625 11 2.0625C11.9117 2.0625 12.786 2.42466 13.4307 3.06932C14.0753 3.71398 14.4375 4.58832 14.4375 5.5V11C14.4375 11.1823 14.3651 11.3572 14.2361 11.4861C14.1072 11.6151 13.9323 11.6875 13.75 11.6875Z"
+																				fill="currentColor" />
+																		</g>
+																	</svg>
+																</a>
+															</li>
+															<li class="addtocart-link">
+																<a href="javascript:;">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M6.43848 3.75H6.55566C7.8822 3.75009 9.15385 4.2769 10.0918 5.21484L10.4697 5.59277C10.6104 5.73343 10.8011 5.8125 11 5.8125C11.1989 5.8125 11.3896 5.73343 11.5303 5.59277L11.9082 5.21484C12.8461 4.2769 14.1178 3.75009 15.4443 3.75H15.5615C18.3236 3.75 20.5625 5.98894 20.5625 8.75098C20.5625 10.1374 19.9869 11.4605 18.9736 12.4062L11 19.8486L3.02637 12.4062C2.01307 11.4605 1.43751 10.1374 1.4375 8.75098C1.4375 5.98894 3.67644 3.75 6.43848 3.75Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-miterlimit="10"
+																			stroke-linejoin="round" />
+																	</svg>
+																</a>
+															</li>
+															<li class="addtocart-link">
+																<a href="./single-product.html">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M0.914062 11C0.914062 11 4.58073 3.66663 10.9974 3.66663C17.4141 3.66663 21.0807 11 21.0807 11C21.0807 11 17.4141 18.3333 10.9974 18.3333C4.58073 18.3333 0.914062 11 0.914062 11Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																		<path
+																			d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</svg>
+																</a>
+															</li>
+														</ul>
+														<div class="jw_featured-Product_card_box_content">
+															<h5><a href="./single-product.html">Rings</a></h5>
+															<p>$ 100</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide" data-title="Earings">
+											<div class="jw_data_title" data-title="Earings">
+												<div class="jw_featured-Product_card_box">
+													<div class="jw_featured-Product_images jw_images_cover">
+														<img decoding="async" loading="lazy" src="image/shop_3.webp"
+															alt="">
+														<ul class="product-extra-link">
+															<li class="addtocart-link">
+																<a href="javascript:;">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<g clip-path="url(#clip0_1_319)">
+																			<path
+																				d="M16.1691 19.9375H5.85658C5.28286 19.9374 4.71674 19.8062 4.2014 19.5541C3.68607 19.3019 3.23513 18.9353 2.88299 18.4824C2.53085 18.0295 2.28681 17.5021 2.16947 16.9405C2.05214 16.3789 2.06462 15.7979 2.20595 15.2419L4.29595 6.70999C4.3336 6.55745 4.42235 6.4224 4.54744 6.32733C4.67253 6.23227 4.82641 6.18291 4.98345 6.18749H16.4991C16.6507 6.18054 16.8004 6.22399 16.9248 6.31105C17.0491 6.3981 17.1412 6.52387 17.1866 6.66874L19.7853 15.0287C19.963 15.5966 20.0039 16.1983 19.9048 16.785C19.8056 17.3716 19.5691 17.9265 19.2147 18.4044C18.8661 18.8842 18.4077 19.2738 17.8779 19.5405C17.3481 19.8072 16.7622 19.9433 16.1691 19.9375ZM5.49908 7.56249L3.51221 15.5719C3.42373 15.9252 3.41664 16.2941 3.49147 16.6506C3.5663 17.0071 3.7211 17.342 3.9442 17.63C4.1673 17.9179 4.45287 18.1515 4.77938 18.313C5.10588 18.4746 5.46481 18.5599 5.82908 18.5625H16.1416C16.5157 18.5631 16.8847 18.4749 17.2181 18.3052C17.5516 18.1355 17.84 17.8891 18.0597 17.5862C18.2857 17.2817 18.4366 16.928 18.4999 16.554C18.5632 16.18 18.5372 15.7964 18.4241 15.4344L16.0041 7.56249H5.49908Z"
+																				fill="currentColor" />
+																			<path
+																				d="M13.75 11.6875C13.5677 11.6875 13.3928 11.6151 13.2639 11.4861C13.1349 11.3572 13.0625 11.1823 13.0625 11V5.5C13.0625 4.95299 12.8452 4.42839 12.4584 4.04159C12.0716 3.6548 11.547 3.4375 11 3.4375C10.453 3.4375 9.92839 3.6548 9.54159 4.04159C9.1548 4.42839 8.9375 4.95299 8.9375 5.5V11C8.9375 11.1823 8.86507 11.3572 8.73614 11.4861C8.6072 11.6151 8.43234 11.6875 8.25 11.6875C8.06766 11.6875 7.8928 11.6151 7.76386 11.4861C7.63493 11.3572 7.5625 11.1823 7.5625 11V5.5C7.5625 4.58832 7.92466 3.71398 8.56932 3.06932C9.21398 2.42466 10.0883 2.0625 11 2.0625C11.9117 2.0625 12.786 2.42466 13.4307 3.06932C14.0753 3.71398 14.4375 4.58832 14.4375 5.5V11C14.4375 11.1823 14.3651 11.3572 14.2361 11.4861C14.1072 11.6151 13.9323 11.6875 13.75 11.6875Z"
+																				fill="currentColor" />
+																		</g>
+																	</svg>
+																</a>
+															</li>
+															<li class="addtocart-link">
+																<a href="javascript:;">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M6.43848 3.75H6.55566C7.8822 3.75009 9.15385 4.2769 10.0918 5.21484L10.4697 5.59277C10.6104 5.73343 10.8011 5.8125 11 5.8125C11.1989 5.8125 11.3896 5.73343 11.5303 5.59277L11.9082 5.21484C12.8461 4.2769 14.1178 3.75009 15.4443 3.75H15.5615C18.3236 3.75 20.5625 5.98894 20.5625 8.75098C20.5625 10.1374 19.9869 11.4605 18.9736 12.4062L11 19.8486L3.02637 12.4062C2.01307 11.4605 1.43751 10.1374 1.4375 8.75098C1.4375 5.98894 3.67644 3.75 6.43848 3.75Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-miterlimit="10"
+																			stroke-linejoin="round" />
+																	</svg>
+																</a>
+															</li>
+															<li class="addtocart-link">
+																<a href="./single-product.html">
+																	<svg width="22" height="22" viewBox="0 0 22 22"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path
+																			d="M0.914062 11C0.914062 11 4.58073 3.66663 10.9974 3.66663C17.4141 3.66663 21.0807 11 21.0807 11C21.0807 11 17.4141 18.3333 10.9974 18.3333C4.58073 18.3333 0.914062 11 0.914062 11Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																		<path
+																			d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z"
+																			stroke="currentColor" stroke-width="1.5"
+																			stroke-linecap="round"
+																			stroke-linejoin="round" />
+																	</svg>
+																</a>
+															</li>
+														</ul>
+														<div class="jw_featured-Product_card_box_content">
+															<h5><a href="./single-product.html">Neckless</a></h5>
+															<p>$ 220</p>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -703,121 +838,7 @@
 										<div class="swiper-slide jw_data_title" data-title="Earings">
 											<div class="jw_featured-Product_card_box">
 												<div class="jw_featured-Product_images jw_images_cover">
-													<img src="image/shop_2.webp" alt="">
-													<ul class="product-extra-link">
-														<li class="addtocart-link">
-															<a href="javascript:;">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<g clip-path="url(#clip0_1_319)">
-																		<path
-																			d="M16.1691 19.9375H5.85658C5.28286 19.9374 4.71674 19.8062 4.2014 19.5541C3.68607 19.3019 3.23513 18.9353 2.88299 18.4824C2.53085 18.0295 2.28681 17.5021 2.16947 16.9405C2.05214 16.3789 2.06462 15.7979 2.20595 15.2419L4.29595 6.70999C4.3336 6.55745 4.42235 6.4224 4.54744 6.32733C4.67253 6.23227 4.82641 6.18291 4.98345 6.18749H16.4991C16.6507 6.18054 16.8004 6.22399 16.9248 6.31105C17.0491 6.3981 17.1412 6.52387 17.1866 6.66874L19.7853 15.0287C19.963 15.5966 20.0039 16.1983 19.9048 16.785C19.8056 17.3716 19.5691 17.9265 19.2147 18.4044C18.8661 18.8842 18.4077 19.2738 17.8779 19.5405C17.3481 19.8072 16.7622 19.9433 16.1691 19.9375ZM5.49908 7.56249L3.51221 15.5719C3.42373 15.9252 3.41664 16.2941 3.49147 16.6506C3.5663 17.0071 3.7211 17.342 3.9442 17.63C4.1673 17.9179 4.45287 18.1515 4.77938 18.313C5.10588 18.4746 5.46481 18.5599 5.82908 18.5625H16.1416C16.5157 18.5631 16.8847 18.4749 17.2181 18.3052C17.5516 18.1355 17.84 17.8891 18.0597 17.5862C18.2857 17.2817 18.4366 16.928 18.4999 16.554C18.5632 16.18 18.5372 15.7964 18.4241 15.4344L16.0041 7.56249H5.49908Z"
-																			fill="currentColor" />
-																		<path
-																			d="M13.75 11.6875C13.5677 11.6875 13.3928 11.6151 13.2639 11.4861C13.1349 11.3572 13.0625 11.1823 13.0625 11V5.5C13.0625 4.95299 12.8452 4.42839 12.4584 4.04159C12.0716 3.6548 11.547 3.4375 11 3.4375C10.453 3.4375 9.92839 3.6548 9.54159 4.04159C9.1548 4.42839 8.9375 4.95299 8.9375 5.5V11C8.9375 11.1823 8.86507 11.3572 8.73614 11.4861C8.6072 11.6151 8.43234 11.6875 8.25 11.6875C8.06766 11.6875 7.8928 11.6151 7.76386 11.4861C7.63493 11.3572 7.5625 11.1823 7.5625 11V5.5C7.5625 4.58832 7.92466 3.71398 8.56932 3.06932C9.21398 2.42466 10.0883 2.0625 11 2.0625C11.9117 2.0625 12.786 2.42466 13.4307 3.06932C14.0753 3.71398 14.4375 4.58832 14.4375 5.5V11C14.4375 11.1823 14.3651 11.3572 14.2361 11.4861C14.1072 11.6151 13.9323 11.6875 13.75 11.6875Z"
-																			fill="currentColor" />
-																	</g>
-																</svg>
-															</a>
-														</li>
-														<li class="addtocart-link">
-															<a href="javascript:;">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path
-																		d="M6.43848 3.75H6.55566C7.8822 3.75009 9.15385 4.2769 10.0918 5.21484L10.4697 5.59277C10.6104 5.73343 10.8011 5.8125 11 5.8125C11.1989 5.8125 11.3896 5.73343 11.5303 5.59277L11.9082 5.21484C12.8461 4.2769 14.1178 3.75009 15.4443 3.75H15.5615C18.3236 3.75 20.5625 5.98894 20.5625 8.75098C20.5625 10.1374 19.9869 11.4605 18.9736 12.4062L11 19.8486L3.02637 12.4062C2.01307 11.4605 1.43751 10.1374 1.4375 8.75098C1.4375 5.98894 3.67644 3.75 6.43848 3.75Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-miterlimit="10"
-																		stroke-linejoin="round" />
-																</svg>
-															</a>
-														</li>
-														<li class="addtocart-link">
-															<a href="./single-product.html">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path
-																		d="M0.914062 11C0.914062 11 4.58073 3.66663 10.9974 3.66663C17.4141 3.66663 21.0807 11 21.0807 11C21.0807 11 17.4141 18.3333 10.9974 18.3333C4.58073 18.3333 0.914062 11 0.914062 11Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round" />
-																	<path
-																		d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round" />
-																</svg>
-															</a>
-														</li>
-													</ul>
-													<div class="jw_featured-Product_card_box_content">
-														<h5><a href="./single-product.html">Rings</a></h5>
-														<p>$ 100</p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide jw_data_title" data-title="Earings">
-											<div class="jw_featured-Product_card_box">
-												<div class="jw_featured-Product_images jw_images_cover">
-													<img src="image/shop_3.webp" alt="">
-													<ul class="product-extra-link">
-														<li class="addtocart-link">
-															<a href="javascript:;">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<g clip-path="url(#clip0_1_319)">
-																		<path
-																			d="M16.1691 19.9375H5.85658C5.28286 19.9374 4.71674 19.8062 4.2014 19.5541C3.68607 19.3019 3.23513 18.9353 2.88299 18.4824C2.53085 18.0295 2.28681 17.5021 2.16947 16.9405C2.05214 16.3789 2.06462 15.7979 2.20595 15.2419L4.29595 6.70999C4.3336 6.55745 4.42235 6.4224 4.54744 6.32733C4.67253 6.23227 4.82641 6.18291 4.98345 6.18749H16.4991C16.6507 6.18054 16.8004 6.22399 16.9248 6.31105C17.0491 6.3981 17.1412 6.52387 17.1866 6.66874L19.7853 15.0287C19.963 15.5966 20.0039 16.1983 19.9048 16.785C19.8056 17.3716 19.5691 17.9265 19.2147 18.4044C18.8661 18.8842 18.4077 19.2738 17.8779 19.5405C17.3481 19.8072 16.7622 19.9433 16.1691 19.9375ZM5.49908 7.56249L3.51221 15.5719C3.42373 15.9252 3.41664 16.2941 3.49147 16.6506C3.5663 17.0071 3.7211 17.342 3.9442 17.63C4.1673 17.9179 4.45287 18.1515 4.77938 18.313C5.10588 18.4746 5.46481 18.5599 5.82908 18.5625H16.1416C16.5157 18.5631 16.8847 18.4749 17.2181 18.3052C17.5516 18.1355 17.84 17.8891 18.0597 17.5862C18.2857 17.2817 18.4366 16.928 18.4999 16.554C18.5632 16.18 18.5372 15.7964 18.4241 15.4344L16.0041 7.56249H5.49908Z"
-																			fill="currentColor" />
-																		<path
-																			d="M13.75 11.6875C13.5677 11.6875 13.3928 11.6151 13.2639 11.4861C13.1349 11.3572 13.0625 11.1823 13.0625 11V5.5C13.0625 4.95299 12.8452 4.42839 12.4584 4.04159C12.0716 3.6548 11.547 3.4375 11 3.4375C10.453 3.4375 9.92839 3.6548 9.54159 4.04159C9.1548 4.42839 8.9375 4.95299 8.9375 5.5V11C8.9375 11.1823 8.86507 11.3572 8.73614 11.4861C8.6072 11.6151 8.43234 11.6875 8.25 11.6875C8.06766 11.6875 7.8928 11.6151 7.76386 11.4861C7.63493 11.3572 7.5625 11.1823 7.5625 11V5.5C7.5625 4.58832 7.92466 3.71398 8.56932 3.06932C9.21398 2.42466 10.0883 2.0625 11 2.0625C11.9117 2.0625 12.786 2.42466 13.4307 3.06932C14.0753 3.71398 14.4375 4.58832 14.4375 5.5V11C14.4375 11.1823 14.3651 11.3572 14.2361 11.4861C14.1072 11.6151 13.9323 11.6875 13.75 11.6875Z"
-																			fill="currentColor" />
-																	</g>
-																</svg>
-															</a>
-														</li>
-														<li class="addtocart-link">
-															<a href="javascript:;">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path
-																		d="M6.43848 3.75H6.55566C7.8822 3.75009 9.15385 4.2769 10.0918 5.21484L10.4697 5.59277C10.6104 5.73343 10.8011 5.8125 11 5.8125C11.1989 5.8125 11.3896 5.73343 11.5303 5.59277L11.9082 5.21484C12.8461 4.2769 14.1178 3.75009 15.4443 3.75H15.5615C18.3236 3.75 20.5625 5.98894 20.5625 8.75098C20.5625 10.1374 19.9869 11.4605 18.9736 12.4062L11 19.8486L3.02637 12.4062C2.01307 11.4605 1.43751 10.1374 1.4375 8.75098C1.4375 5.98894 3.67644 3.75 6.43848 3.75Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-miterlimit="10"
-																		stroke-linejoin="round" />
-																</svg>
-															</a>
-														</li>
-														<li class="addtocart-link">
-															<a href="./single-product.html">
-																<svg width="22" height="22" viewBox="0 0 22 22"
-																	fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path
-																		d="M0.914062 11C0.914062 11 4.58073 3.66663 10.9974 3.66663C17.4141 3.66663 21.0807 11 21.0807 11C21.0807 11 17.4141 18.3333 10.9974 18.3333C4.58073 18.3333 0.914062 11 0.914062 11Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round" />
-																	<path
-																		d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z"
-																		stroke="currentColor" stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round" />
-																</svg>
-															</a>
-														</li>
-													</ul>
-													<div class="jw_featured-Product_card_box_content">
-														<h5><a href="./single-product.html">Neckless</a></h5>
-														<p>$ 220</p>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide jw_data_title" data-title="Earings">
-											<div class="jw_featured-Product_card_box">
-												<div class="jw_featured-Product_images jw_images_cover">
-													<img src="image/shop_4.webp" alt="">
+													<img decoding="async" loading="lazy" src="image/shop_4.webp" alt="">
 													<ul class="product-extra-link">
 														<li class="addtocart-link">
 															<a href="javascript:;">
@@ -885,12 +906,14 @@
 								<div class="jw_newsletter_col_top">
 									<div class="jw_newsletter_images jw_newsletter_images_left jw_images_cover jw_data_title content__item"
 										data-title="Want some news bracelate">
-										<img class="content__item-img" src="image/images-12.webp" alt="bracelate">
+										<img decoding="async" loading="lazy" class="content__item-img"
+											src="image/images-12.webp" alt="bracelate">
 										<div class="content__item-title"></div>
 									</div>
 									<div class="jw_newsletter_images jw_newsletter_images_right jw_images_cover jw_data_title content__item"
 										data-title="Want some news Neckless">
-										<img class="content__item-img" src="image/images-13.webp" alt="bracelate">
+										<img decoding="async" loading="lazy" class="content__item-img"
+											src="image/images-13.webp" alt="bracelate">
 										<div class="content__item-title"></div>
 									</div>
 								</div>
@@ -907,12 +930,14 @@
 								<div class="jw_newsletter_col_bottom">
 									<div class="jw_newsletter_images jw_newsletter_images_left jw_images_cover jw_data_title content__item"
 										data-title="Want some news Rings">
-										<img class="content__item-img" src="image/images-14.webp" alt="ring">
+										<img decoding="async" loading="lazy" class="content__item-img"
+											src="image/images-14.webp" alt="ring">
 										<div class="content__item-title"></div>
 									</div>
 									<div class="jw_newsletter_images jw_newsletter_images_right jw_images_cover jw_data_title content__item"
 										data-title="Want some news Earings">
-										<img class="content__item-img" src="image/images-15.webp" alt="ring">
+										<img decoding="async" loading="lazy" class="content__item-img"
+											src="image/images-15.webp" alt="ring">
 										<div class="content__item-title"></div>
 									</div>
 								</div>
@@ -957,7 +982,8 @@
 										<div class="swiper-slide">
 											<a href="./blog-grid.html" class="jw_blog_two_card_box">
 												<div class="jw_blog_two_images">
-													<img src="image/blog_two.webp" alt="">
+													<img decoding="async" loading="lazy" src="image/blog_two.webp"
+														alt="">
 												</div>
 												<div class="jw_blog_two_card_box_content">
 													<p class="p2">Sep,8 2022</p>
@@ -967,7 +993,7 @@
 														Read More
 														<svg width="43" height="21" viewBox="0 0 43 21" fill="none"
 															xmlns="http://www.w3.org/2000/svg"
-															class="jw_arrow-big jw_arrow_sharp">
+															class="jw_arrow-medium jw_arrow_sharp">
 															<path d="M35.3516 8.14648L41.498 14L35.998 20.2071"
 																stroke="currentColor" />
 															<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5"
@@ -980,7 +1006,8 @@
 										<div class="swiper-slide">
 											<a href="./blog-grid.html" class="jw_blog_two_card_box">
 												<div class="jw_blog_two_images">
-													<img src="image/blog_two_2.webp" alt="">
+													<img decoding="async" loading="lazy" src="image/blog_two_2.webp"
+														alt="">
 												</div>
 												<div class="jw_blog_two_card_box_content">
 													<p class="p2">Sep,8 2022</p>
@@ -992,7 +1019,7 @@
 														Read More
 														<svg width="43" height="21" viewBox="0 0 43 21" fill="none"
 															xmlns="http://www.w3.org/2000/svg"
-															class="jw_arrow-big jw_arrow_sharp">
+															class="jw_arrow-medium jw_arrow_sharp">
 															<path d="M35.3516 8.14648L41.498 14L35.998 20.2071"
 																stroke="currentColor" />
 															<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5"
@@ -1005,7 +1032,8 @@
 										<div class="swiper-slide">
 											<a href="./blog-grid.html" class="jw_blog_two_card_box">
 												<div class="jw_blog_two_images">
-													<img src="image/blog_two_3.webp" alt="">
+													<img decoding="async" loading="lazy" src="image/blog_two_3.webp"
+														alt="">
 												</div>
 												<div class="jw_blog_two_card_box_content">
 													<p class="p2">Sep,8 2022</p>
@@ -1015,7 +1043,7 @@
 														Read More
 														<svg width="43" height="21" viewBox="0 0 43 21" fill="none"
 															xmlns="http://www.w3.org/2000/svg"
-															class="jw_arrow-big jw_arrow_sharp">
+															class="jw_arrow-medium jw_arrow_sharp">
 															<path d="M35.3516 8.14648L41.498 14L35.998 20.2071"
 																stroke="currentColor" />
 															<path d="M0.5 0V7C0.5 10.866 3.63401 14 7.5 14H41.5"
@@ -1036,7 +1064,8 @@
 						<div class="container">
 							<div class="jw_footer_wrap_two">
 								<div class="jw_footer_logo_content">
-									<a href="index.html"><img src="image/footer-2-logo.svg" alt="FOoter_Logo"></a>
+									<a href="index.html"><img decoding="async" src="image/footer-2-logo.svg"
+											alt="FOoter_Logo"></a>
 									<p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 										eiusmod tempor
 										incididunt ut
@@ -1136,7 +1165,7 @@
 		<div class="container">
 			<div class="jw_footer_wrap_two">
 				<div class="jw_footer_logo_content">
-					<a href="index.html"><img src="image/footer-2-logo.svg" alt="FOoter_Logo"></a>
+					<a href="index.html"><img decoding="async" src="image/footer-2-logo.svg" alt="FOoter_Logo"></a>
 					<p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 						incididunt ut
 						labore et dolore magna aliqua.</p>
@@ -1222,10 +1251,18 @@
 	<!-- close_jw_footer -->
 
 
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/scroll-parallax.js"></script>
-	<script src="js/scroll-zoom.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/jquery.min.js" defer></script>
+	<script src="js/jquery.mixitup.min.js" defer></script>
+	<script src="js/waypoints.min.js" defer></script>
+	<script src="js/jquery.ripples-min.js" defer></script>
+	<script src="js/aos.js" defer></script>
+	<script src="js/all.min.js" defer></script>
+	<script src="js/jquery.magnific-popup.min.js" defer></script>
+	<script src="js/swiper-bundle.min.js" defer></script>
+	<script src="js/imagesloaded.pkgd.min.js" defer></script>
+	<script src="js/scroll-parallax.js" defer></script>
+	<script src="js/scroll-zoom.js" defer></script>
+	<script src="js/custom.js" defer></script>
 </body>
 
 </html>
