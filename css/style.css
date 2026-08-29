@@ -260,7 +260,7 @@ p {
 /* blog-grid */
 .jw_login_page_section form input::placeholder {
   margin-top: 25px;
-  color: #153462C2;
+  color: #153462c2;
 }
 .jw_login_page_section form input {
   margin-top: 25px;
@@ -1175,7 +1175,7 @@ p.wrap {
 .home-slider .swiper-image {
   width: 50%;
   height: 100%;
-} 
+}
 
 .swiper-image-img {
   position: absolute;
@@ -1527,13 +1527,12 @@ p.wrap {
   overflow: hidden;
 }
 
-.jw_data_title:hover .jw_shop_stores_card_box .jw_shop_stores_images,
-.jw_shop_stores_card_box:hover .jw_shop_stores_images img,
-.jw_shop_stores_card_box .jw_shop_stores_images {
-  transition: 0.5s all ease;
+.jw_data_title .jw_shop_stores_card_box .jw_shop_stores_images img,
+.jw_shop_stores_card_box .jw_shop_stores_images img {
+  transition: 0.5s all ease-in-out;
 }
 
-.jw_data_title:hover .jw_shop_stores_card_box .jw_shop_stores_images,
+.jw_data_title:hover .jw_shop_stores_card_box .jw_shop_stores_images img,
 .jw_shop_stores_card_box:hover .jw_shop_stores_images img {
   transform: scale(1.05);
 }
@@ -2090,10 +2089,10 @@ p.jw_single_price {
   width: 100%;
   margin: 60px auto 100px;
 }
-.jw_contact_form #contactForm div{
+.jw_contact_form #contactForm div {
   margin-top: 20px;
 }
-.jw_contact_form #contactForm div:first-child{
+.jw_contact_form #contactForm div:first-child {
   margin-top: 0;
 }
 .jw_contact_page_section form {
@@ -2357,7 +2356,7 @@ p.jw_single_price {
   font-size: 86px;
   line-height: 96px;
   color: #fff;
-  margin-top: -11px
+  margin-top: -11px;
 }
 
 .jw_blog_detail_quotes h6 {
@@ -5296,13 +5295,13 @@ input {
   margin-bottom: 35px;
 }
 
-.jw_privacy_terms_section a span{
+.jw_privacy_terms_section a span {
   color: #153462;
   font-weight: 500;
 }
 .jw_privacy_terms_section p {
-    max-width: 790px;
-    color: #153462;
+  max-width: 790px;
+  color: #153462;
 }
 
 /* -------------------------------------------------------------------
@@ -8798,7 +8797,6 @@ input {
     max-width: 100%;
   }
 
-  /* .jw_releted_product_title h3, */
   p.jw_single_price {
     margin-bottom: 25px;
   }
@@ -9075,7 +9073,6 @@ input {
     font-size: 18px;
   }
 
-  /* .jw_releted_product_title h3, */
   p.jw_single_price {
     margin-bottom: 15px;
   }
@@ -9671,7 +9668,6 @@ input {
   .jw_newsletter_form {
     max-width: 360px;
     margin: 0 auto;
-    /* padding: 15px; */
   }
 
   .jw_newsletter_wrap .jw_newsletter_col_bottom .jw_newsletter_images_left {
@@ -10455,9 +10451,7 @@ input {
   .jw_blog_detail_quotes h2 {
     font-size: 76px;
     line-height: 88px;
-}
-
-
+  }
 }
 
 @media (max-width: 425px) {
