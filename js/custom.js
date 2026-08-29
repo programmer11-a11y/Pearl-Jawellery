@@ -4,10 +4,30 @@ jQuery(document).ready(function () {
     slidesPerView: 1,
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 7500,
       disableOnInteraction: false,
     },
   });
+  function updateHeroContent(swiperInstance) {
+    var $activeSlide = jQuery(swiperInstance.slides[swiperInstance.activeIndex]);
+    var heading = $activeSlide.attr("data-heading");
+    var subtitle = $activeSlide.attr("data-subtitle");
+    var $heading = jQuery(".jw_hero_contents h1");
+    var $wrap = jQuery(".jw_hero_contents .wrap");
+
+    if (heading && $heading.length && $heading.text().trim() !== heading) {
+      $heading.stop(true, true).fadeOut(200, function () {
+        jQuery(this).text(heading).fadeIn(300);
+      });
+    }
+
+    if (subtitle && $wrap.length && $wrap.text().trim() !== subtitle) {
+      $wrap.stop(true, true).fadeOut(200, function () {
+        jQuery(this).text(subtitle).fadeIn(300);
+      });
+    }
+  }
+
   var mySwiper = new Swiper(".home-slider .swiper-container", {
     direction: "vertical",
     loop: true,
@@ -18,8 +38,16 @@ jQuery(document).ready(function () {
     effect: "slide",
     mousewheelControl: 1,
     autoplay: {
-      delay: 1000,
+      delay: 7000,
       disableOnInteraction: false,
+    },
+    on: {
+      init: function () {
+        updateHeroContent(this);
+      },
+      slideChangeTransitionStart: function () {
+        updateHeroContent(this);
+      },
     },
   });
 
